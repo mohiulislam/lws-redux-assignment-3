@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { FaShoppingBag } from "react-icons/fa";
+import { useSelector } from "react-redux";
 function Nav() {
+  const subTotalProductInCart = useSelector((state) =>
+    state.cart.products.reduce((ac, product) => product.quantity + ac, 0)
+  );
   return (
     <nav className="bg-[#171C2A] py-4">
       <div className="navBar">
@@ -17,7 +21,7 @@ function Nav() {
             <i className="text-xl fa-sharp ">
               <FaShoppingBag />
             </i>
-            <span id="lws-totalCart">0</span>
+            <span id="lws-totalCart">{subTotalProductInCart}</span>
           </Link>
         </div>
       </div>
