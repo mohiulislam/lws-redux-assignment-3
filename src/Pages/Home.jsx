@@ -23,7 +23,7 @@ function Home() {
       [name]: name === "price" || name === "quantity" ? +value : value,
     }));
   };
-  
+
   function handleAddProduct(event) {
     event.preventDefault();
     dispatch(addProduct(formData));
