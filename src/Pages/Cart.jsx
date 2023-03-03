@@ -16,6 +16,12 @@ function Cart() {
       <Nav />
       <main className="py-16">
         <div className="container 2xl:px-8 px-2 mx-auto">
+          <p style={{ color: "red" }}>
+            প্রোডাক্ট কমাতে, কমাতে একটার কম না হওয়ার বিষয়টি কোন bug নয় |
+            বিভিন্ন ই-কমার site এ এমনটিই দেখা যায় যে কার্ডের সর্বনিম্ন একটি
+            প্রোডাক্ট থাকে |ক্রেতা চাইলে ডিলিট বাটনে চাপ দিয়ে সেই একটি
+            প্রোডাক্ট ডিলিট করতে পারে |
+          </p>
           <h2 className="mb-8 text-xl font-bold">Shopping Cart</h2>
           <div className="cartListContainer">
             <div className="space-y-6">
